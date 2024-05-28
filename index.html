@@ -101,25 +101,10 @@
     </div>
     
     <ol>
-        <li>
-            <form action="." method="get">
-                <a href="http://tinypic.com/" target="_blank" style="color: white;"><button type="button">上傳圖片</button></a>
-                <label for="url_input">輸入圖片網址: </label>
-                <input type="text" name="img" id="url_input" value="" />
-                <input type="button" value="開始" onclick="window.open('?img='+document.getElementById('url_input').value + '&size=' +  + slider.getSelectTileSize(), '_self');" />
-            </form>
-        </li>
-        <li>請從您的電腦上拖曳圖片檔案到這個位置</li>
         <li>上傳圖片檔案: <input type="file" id="imageholder" /></li>
         <li><button type="button" class="demo_image" onclick="slider.readDemo();">使用範例圖片</button></li>
     </ol>
     
-
-    <div>
-        <br />
-        建議使用500x500的圖片，或是高度大於寬度的圖片。<br />
-        拼圖遊戲會自動調整圖片尺寸到合適的大小。
-    </div>
 </div>
 </div>
 
@@ -156,11 +141,6 @@ window.fbAsyncInit = function() {
 
 </script>
 
-<div class="helpText footer">
-    <a href="https://github.com/pulipulichen/Sliding-Puzzle" target="_blank">GitHub Repository</a>
-    |
-    <a href="http://blog.pulipuli.info/" target="_blank">Blog: 布丁布丁吃什麼？</a>
-</div>
 
 </body>
 </html>
