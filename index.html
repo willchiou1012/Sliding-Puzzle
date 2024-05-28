@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-    <title>滑塊拼圖遊戲 (HTML5客戶端應用程式)</title>
+    <title>滑塊拼圖遊戲 </title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="./js/slider.js" type="text/javascript"></script>
@@ -43,26 +43,15 @@
 <div class="gameBoard">
 
     <div id="gameBoardPlaying">
-        <div id="share" class="button share" onclick="slider.helpclick('share');">
-            <img src="img/facebook.png" />
-            分享
-        </div>
         <div id="source" class="button preview-target" onclick="slider.helpclick('source');">目標圖片(z)</div>
         <div id="game" onclick="slider.helpclick('game');" class="button preview-target" style="display: none;">繼續挑戰(z)</div>
         <div id="shuffle" onclick="slider.helpclick('shuffle');" class="button">重新挑戰</div>
         <div id="newgame" onclick="slider.helpclick('newgame');" class="button">換一張圖</div>
     </div>
     <div id="gameBoardFinish">
-        <div id="share" class="button share" onclick="slider.helpclick('share');">
-            <img src="img/facebook.png" />
-            分享
-        </div>
         <div id="reset" onclick="location.reload();" class="button">再玩一次</div>
         <div id="newgame" onclick="slider.helpclick('newgame');" class="button">換一張圖</div>
     </div>
-
-        
-    
 
 <span class="floatRight timeCount">
     <span class="tileSize">4</span>x<span class="tileSize">4</span>/<span id="timeElapsed">00:00:00</span>/<span id="stepElapsed">0</span>步
