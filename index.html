@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
-    <title>滑塊拼圖遊戲 (HTML5客戶端應用程式)</title>
+    <title>TAHRD 114 Senior Project</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="./js/slider.js" type="text/javascript"></script>
@@ -43,22 +43,12 @@
 <div class="gameBoard">
 
     <div id="gameBoardPlaying">
-        <div id="share" class="button share" onclick="slider.helpclick('share');">
-            <img src="img/facebook.png" />
-            分享
-        </div>
         <div id="source" class="button preview-target" onclick="slider.helpclick('source');">目標圖片(z)</div>
         <div id="game" onclick="slider.helpclick('game');" class="button preview-target" style="display: none;">繼續挑戰(z)</div>
         <div id="shuffle" onclick="slider.helpclick('shuffle');" class="button">重新挑戰</div>
-        <div id="newgame" onclick="slider.helpclick('newgame');" class="button">換一張圖</div>
     </div>
     <div id="gameBoardFinish">
-        <div id="share" class="button share" onclick="slider.helpclick('share');">
-            <img src="img/facebook.png" />
-            分享
-        </div>
         <div id="reset" onclick="location.reload();" class="button">再玩一次</div>
-        <div id="newgame" onclick="slider.helpclick('newgame');" class="button">換一張圖</div>
     </div>
 
         
@@ -94,18 +84,8 @@
         <input type="radio" value="3" name="tileSize" id="tileSize3" />
         <label for="tileSize3">3x3</label>
         -->
-        <input type="radio" value="3" name="tileSize" id="tileSize3" />
+        <input type="radio" value="3" name="tileSize" id="tileSize3" checked="checked" />
         <label for="tileSize4">3x3</label>
-        <input type="radio" value="4" name="tileSize" id="tileSize4" checked="checked" />
-        <label for="tileSize4">4x4</label>
-        <input type="radio" value="5" name="tileSize" id="tileSize5" />
-        <label for="tileSize5">5x5</label>
-        <input type="radio" value="6" name="tileSize" id="tileSize6" />
-        <label for="tileSize6">6x6</label>
-        <input type="radio" value="7" name="tileSize" id="tileSize7" />
-        <label for="tileSize7">7x7</label>
-        <input type="radio" value="8" name="tileSize" id="tileSize8" />
-        <label for="tileSize8">8x8</label>
     </div>
     <div class="ul-helper">
         請選擇以下一種方式開始遊戲：
@@ -120,17 +100,9 @@
                 <input type="button" value="開始" onclick="window.open('?img='+document.getElementById('url_input').value + '&size=' +  + slider.getSelectTileSize(), '_self');" />
             </form>
         </li>
-        <li>請從您的電腦上拖曳圖片檔案到這個位置</li>
-        <li>上傳圖片檔案: <input type="file" id="imageholder" /></li>
         <li><button type="button" class="demo_image" onclick="slider.readDemo();">使用範例圖片</button></li>
     </ol>
-    
 
-    <div>
-        <br />
-        建議使用500x500的圖片，或是高度大於寬度的圖片。<br />
-        拼圖遊戲會自動調整圖片尺寸到合適的大小。
-    </div>
 </div>
 </div>
 
@@ -167,11 +139,6 @@ window.fbAsyncInit = function() {
 
 </script>
 
-<div class="helpText footer">
-    <a href="https://github.com/pulipulichen/Sliding-Puzzle" target="_blank">GitHub Repository</a>
-    |
-    <a href="http://blog.pulipuli.info/" target="_blank">Blog: 布丁布丁吃什麼？</a>
-</div>
 
 </body>
 </html>
